@@ -1,0 +1,25 @@
+.cartes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+  
+.carte {
+    flex: 0 1 calc(20% - 150px); 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    opacity: 1; 
+}
+
+h2, p, .title {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 20px; 
+    font-size: 3em;
+    font-weight: bold;
+}

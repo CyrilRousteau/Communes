@@ -1,0 +1,15 @@
+<div class="title">Liste des communes triées par Provinces et Superficies</div>
+
+<div class="cartes-container">
+  <div class="carte" *ngFor="let commune of listeCommunes" 
+       [ngStyle]="{
+         'background-color': couleurProvince(commune.Province, commune.Superficie),
+         'font-size': tailleCommune(commune.Population) + 'px'
+       }">
+    <h2>{{ commune.Nom }}</h2>
+    <p>Code Postal: {{ commune.CodePostal }}</p>
+    <p>Population: {{ commune.Population }}</p>
+    <p>Superficie: {{ commune.Superficie }} km²</p>
+    <p>Province: {{ commune.Province }}</p>
+  </div>
+</div>
